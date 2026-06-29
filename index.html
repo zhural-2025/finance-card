@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Автоматизация бизнес-процессов через AI-ботов</title>
+  <meta name="description" content="Промпт-инженер: проектирую AI-ботов на платформе Smaipl, которые автоматизируют рутину бизнеса — запись, заявки, отчёты, интеграции с календарём и документами." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Автоматизация бизнес-процессов через AI-ботов" />
+  <meta property="og:description" content="AI-боты на Smaipl: запись, заявки, отчёты, интеграции. Без ручной рутины." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.svg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">A&#x2022;Bots</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#polza">Польза</a>
+        <a href="#doverie">Доверие</a>
+        <a href="#forma">Заявка</a>
+        <a href="#kontakty">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-avatar" aria-hidden="true">ПИ</div>
+        <h1>Автоматизирую рутину бизнеса через AI-ботов</h1>
+        <p class="lead">
+          Проектирую ботов на платформе Smaipl: запись клиентов, приём заявок,
+          ответы 24/7, отчёты и инструкции — с интеграциями в календарь и документы.
+        </p>
+        <a class="btn" href="#forma">Обсудить задачу</a>
+      </div>
+    </section>
+
+    <!-- ПОЛЬЗА -->
+    <section id="polza" class="section">
+      <div class="container">
+        <h2>Что получает бизнес</h2>
+        <ul class="cards">
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">📥</span>
+            <h3>Заявки не теряются</h3>
+            <p>Бот принимает обращение в любой момент и ведёт клиента по сценарию — ничего не уходит «в никуда».</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🕑</span>
+            <h3>Ответ 24/7</h3>
+            <p>Клиент получает ответ и запись без ожидания администратора — даже ночью и в выходные.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">📅</span>
+            <h3>Запись в календарь</h3>
+            <p>Интеграция с Яндекс-календарём: бот сам предлагает свободные слоты и фиксирует запись.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">📑</span>
+            <h3>Отчёты и инструкции</h3>
+            <p>Автоматические инструкции и отчёты по проекту — результат фиксируется, а не держится в голове.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ДОВЕРИЕ -->
+    <section id="doverie" class="section section-alt">
+      <div class="container">
+        <h2>Проекты и кейсы</h2>
+
+        <article class="case">
+          <h3>Бот-администратор салона красоты</h3>
+          <p class="case-task"><strong>Задача:</strong> снять с администратора рутину приёма записей и консультаций.</p>
+          <p class="case-done"><strong>Что сделано:</strong> бот ведёт диалог по услугам и прайсу, предлагает свободные слоты из Яндекс-календаря, оформляет запись, проводит первичную консультацию по правилам салона.</p>
+          <p class="case-result"><strong>Результат:</strong> запись клиентов работает без ручного труда администратора; правила консультации соблюдаются единообразно.</p>
+        </article>
+
+        <article class="case">
+          <h3>Бот-читатель PDF</h3>
+          <p class="case-task"><strong>Задача:</strong> извлекать текст из PDF (в т.ч. сканов) и сохранять в Google Doc.</p>
+          <p class="case-done"><strong>Что сделано:</strong> Telegram-бот с OCR: принимает PDF, распознаёт содержимое, выкладывает в документ.</p>
+          <p class="case-result"><strong>Результат:</strong> ручной перенос текста из PDF заменён одним сообщением боту.</p>
+        </article>
+
+        <div class="about">
+          <h3>Обо мне</h3>
+          <p>
+            Промпт-инженер: проектирую архитектуру промптов, отлаживаю edge cases,
+            сопровождаю ботов на платформе Smaipl. Работаю на русском, веду проект
+            итеративно — от гипотезы до финализации.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА -->
+    <section id="forma" class="section">
+      <div class="container narrow">
+        <h2>Обсудить задачу</h2>
+        <p class="form-intro">Опишите, какую рутину хотите автоматизировать, — отвечу в Telegram или на почте.</p>
+
+        <form id="lead-form" class="lead-form" novalidate>
+          <!-- honeypot: скрытое поле, боты заполнят, люди — нет -->
+          <div class="honeypot" aria-hidden="true">
+            <label>Не заполняйте<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" name="name" required maxlength="120" placeholder="Как к вам обращаться" />
+          </label>
+
+          <label class="field">
+            <span>Контакт (Telegram или email)</span>
+            <input type="text" name="contact" required maxlength="160" placeholder="@username или you@example.com" />
+          </label>
+
+          <label class="field">
+            <span>Задача</span>
+            <textarea name="message" required maxlength="2000" rows="4" placeholder="Что автоматизируем, в чём сейчас рутина"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-block">Отправить заявку</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="kontakty" class="section section-alt">
+      <div class="container">
+        <h2>Контакты</h2>
+        <ul class="contacts">
+          <li><span aria-hidden="true">✈️</span> <a href="https://t.me/CHANGE_ME">Telegram</a></li>
+          <li><span aria-hidden="true">✉️</span> <a href="mailto:CHANGE_ME@example.com">Email</a></li>
+          <li><span aria-hidden="true">🤖</span> Платформа: <a href="https://account.smaipl.ru">Smaipl</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> · AI-боты для автоматизации бизнеса</p>
+    </div>
+  </footer>
+</body>
+</html>
