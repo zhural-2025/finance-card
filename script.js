@@ -1,6 +1,9 @@
 // === Настройка формы ===
-// Заменить на URL своего Cloudflare Worker (см. worker/telegram-webhook.js и README.md).
-const WEBHOOK_URL = "https://your-worker.example.workers.dev";
+// Публичный URL Yandex Cloud Function (заявки уходят сюда -> пересылка в Telegram).
+const WEBHOOK_URL = "https://functions.yandexcloud.net/d4e2ttu9d8vr6312htq8";
+
+// Общий секрет. Тот же, что в переменной окружения SITE_TOKEN функции.
+const SITE_TOKEN = "0fcc104708a7dcc580fd25eb0ff46d4c1f98665002e05a66";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Год в подвале
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "X-Site-Token": "REPLACE_WITH_SITE_TOKEN", // должно совпадать с SITE_TOKEN в Worker
+            "X-Site-Token": SITE_TOKEN,
           },
           body: JSON.stringify({
             type: "visitka",
